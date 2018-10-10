@@ -10,7 +10,7 @@
 #' @title crear directorio del proyecto
 #' @description esta funcion cre la esrtrucutra de carpetas para el proyecto.
 #' @path ruta donde se creara el proyecto.
-#' @name create_project_dir
+#' @name create_project_dir.
 #' @export
 
 create_project_dir<- function(path,name){
@@ -18,7 +18,8 @@ create_project_dir<- function(path,name){
         dir.create(path2<-file.path(path, name), showWarnings = FALSE)
         dir.create(file.path(path2, "Manuales"), showWarnings = FALSE)
         dir.create(file.path(path2, "Main_Project"), showWarnings = FALSE)
-        dir.create(file.path(path2, "Automatizacion"), showWarnings = FALSE)
+        dir.create(file.path(path2, "Automatization"), showWarnings = FALSE)
+        dir.create(file.path(path2, "DataTreatment"), showWarnings = FALSE)
 
         main_project<-paste0(path2,"/","Main_Project")
 

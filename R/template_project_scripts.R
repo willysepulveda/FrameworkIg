@@ -17,7 +17,7 @@
 template_project_scripts<- function(project_path){
 
         ## create file config.
-        project_path_config<-paste0(project_path,"/Scripts/Config/")
+        project_path_config<-paste0(project_path,"/Main_Project/Scripts/Config/")
 
         file.create(paste0(project_path_config,"Config.R"))
         fileConn<-file(paste0(project_path_config,"Config.R"))
